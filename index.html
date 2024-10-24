@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ff5722;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Delícias do Sabor</h1>
+        <nav>
+            <ul>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#pratos-principais">Pratos Principais</a></li>
+                <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="entradas">
+            <h2>Entradas</h2>
+            <ul>
+                <li>
+                    <h3>Bruschetta</h3>
+                    <p>Fatias de pão italiano com tomate, manjericão e azeite.</p>
+                    <img src="https://th.bing.com/th/id/OIP.4-aDQrUwyM6B6vxTZrXAJAHaEz?rs=1&pid=ImgDetMain" width="400px" height="400px">
+                    <br>
+                    <span>R$ 15,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="bruschetta">
+                </li>
+                <li>
+                    <h3>Salada Caesar</h3>
+                    <p>Alface, croutons, queijo parmesão e molho Caesar.</p>
+                    <img src="https://bing.com/th?id=OSK.07f279c137d000357ee96fab15752d54" width="400px" height="400px">
+                    <br>
+                    <span>R$ 20,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="caesar">
+                </li>
+            </ul>
+        </section>
+
+        <section id="pratos-principais">
+            <h2>Pratos Principais</h2>
+            <ul>
+                <li>
+                    <h3>Filé à Parmegiana</h3>
+                    <p>Filé empanado coberto com molho de tomate e queijo.</p>
+                    <img src="https://th.bing.com/th/id/R.bd850ec1aafcb0fc9d47adb05d08334e?rik=qlL9U%2f6vQk8zTA&pid=ImgRaw&r=0" width="400px" height="400px">
+                    <br>
+                    <span>R$ 35,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="parmegiana">
+                </li>
+                <li>
+                    <h3>Risoto de Frutos do Mar</h3>
+                    <p>Arroz cremoso com camarões e mexilhões.</p>
+                    <img src="https://th.bing.com/th/id/R.c0bc37049435bd5f05353cff96d28c1f?rik=J0wAGdiHAxSWAw&pid=ImgRaw&r=0" width="400px" height="400px">
+                    <br>
+                    <span>R$ 45,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="risoto">
+                </li>
+            </ul>
+        </section>
+
+        <section id="sobremesas">
+            <h2>Sobremesas</h2>
+            <ul>
+                <li>
+                    <h3>Torta de Limão</h3>
+                    <p>Deliciosa torta com creme de limão e merengue.</p>
+                    <img src="https://th.bing.com/th/id/OIP.MfTY0CrFjBVe3sFghLW1EAHaE8?rs=1&pid=ImgDetMain" width="400px" height="400px">
+                    <br>
+                    <span>R$ 12,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="torta">
+                </li>
+                <li>
+                    <h3>Brownie com Sorvete</h3>
+                    <p>Brownie quente servido com uma bola de sorvete.</p>
+                    <img src="https://www.sabornamesa.com.br/media/k2/items/cache/a94223583c21271a45ef62305d4e2266_XL.jpg" width="400px" height="400px">
+                    <br>
+                    <span>R$ 18,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="sorvete">
+                </li>
+            </ul>
+        </section>
+
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <ul>
+                <li>
+                    <h3>Refrigerante</h3>
+                    <p>Escolha entre Cola, Laranja ou Limão.</p>
+                    <img src="https://th.bing.com/th/id/OIP.aKV-B7Nd90sz7gikfvwfUgHaHa?rs=1&pid=ImgDetMain" width="400px" height="400px">
+                    <br>
+                    <span>R$ 5,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="refri">
+                </li>
+                <li>
+                    <h3>Suco Natural</h3>
+                    <p>Suco fresco de frutas da estação.</p>
+                    <img src="https://www.sabornamesa.com.br/media/k2/items/cache/98bce7d9d49222dae020697d2909b8d4_L.jpg" width="400px" height="400px">
+                    <br>
+                    <span>R$ 8,00</span>
+                    <label>Quantidade: </label>
+                    <input type="number" min="0" value="0" id="natural">
+                </li>
+            </ul>
+        </section>
+        <a href="pay.html"><button>Enviar</button></a>
+      </form>
+    </main>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <footer>
+        <p>&copy; 2024 Restaurante Delícias do Sabor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

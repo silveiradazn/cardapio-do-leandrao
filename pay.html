@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+  }
+  
+  header {
+      background-color: #ff5722;
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin: 0 15px;
+  }
+  
+  nav a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  main {
+      padding: 20px;
+  }
+  
+  section {
+      margin-bottom: 40px;
+  }
+  
+  h2 {
+      color: #ff5722;
+  }
+  
+  footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Finalização de Compra</h1>
+    </header>
+
+    <main>
+        <section id="resumo-pedido">
+            <h2>Resumo do Pedido</h2>
+            <ul>
+                <li>
+                    <strong>Bruschetta</strong> - R$ 15,00
+                </li>
+                <li>
+                    <strong>Filé à Parmegiana</strong> - R$ 35,00
+                </li>
+                <li>
+                    <strong>Torta de Limão</strong> - R$ 12,00
+                </li>
+                <li>
+                    <strong>Subtotal:</strong> R$ 62,00
+                </li>
+                <li>
+                    <strong>Frete:</strong> R$ 10,00
+                </li>
+                <li>
+                    <strong>Total:</strong> R$ 72,00
+                </li>
+            </ul>
+        </section>
+
+        <section id="informacoes-pagamento">
+            <h2>Informações de Pagamento</h2>
+            <form action="#" method="POST">
+                <label for="nome-titular">Nome do Titular do Cartão:</label>
+                <input type="text" id="nome-titular" name="nome-titular" required>
+
+                <label for="numero-cartao">Número do Cartão:</label>
+                <input type="text" id="numero-cartao" name="numero-cartao" required>
+
+                <label for="data-validade">Data de Validade:</label>
+                <input type="text" id="data-validade" name="data-validade" placeholder="MM/AA" required>
+
+                <label for="codigo-seguranca">Código de Segurança:</label>
+                <input type="text" id="codigo-seguranca" name="codigo-seguranca" required>
+
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+    </main>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <footer>
+        <p>&copy; 2024 Restaurante Delícias do Sabor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
